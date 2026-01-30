@@ -2,8 +2,8 @@ script "inv_tweaks";
 notify yoioy;
 
 void smash(int qty, item i) {
-	print("");
-	print("smashing a " + i);
+	//print("");
+	//print("smashing a " + i);
 	visit_url("craft.php?action=pulverize&mode=smith&smashitem=" + to_int(i) + "&qty=" + qty + "&pwd=" + my_hash());
 }
 void mail_list_helper(string rec, item[int] list) {
@@ -185,3 +185,4 @@ void main() {
 	}
 	write(parts[0] + split_str + inv_tweaks_ctrl_panel + parts[1] + inv_tweaks_code);
 }
+
