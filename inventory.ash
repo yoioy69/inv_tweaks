@@ -36,7 +36,7 @@ void mail_list(string rec, item[int] list) {
 		mail_list_helper(rec, t_list);
 }
 void run_all_lists() {
-	print("ok bub");
+	//print("ok bub");
 	string[int] t = {};
 	file_to_map("inv_tweaks/sell_list.txt", t);
 	foreach i,id in t
@@ -185,4 +185,5 @@ void main() {
 	}
 	write(parts[0] + split_str + inv_tweaks_ctrl_panel + parts[1] + inv_tweaks_code);
 }
+
 
